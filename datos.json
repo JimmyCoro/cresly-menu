@@ -5,7 +5,8 @@
   "fields": {
     "name": "Pizzas",
     "subtitle": "Pide 2 mitades diferentes sin costo extra",
-    "image": "categories/4.png",
+    "image": "categories/Pizza.png",
+    "banner_image": "categories/banners/10.png",
     "icon": "",
     "order": 1
   }
@@ -16,9 +17,34 @@
   "fields": {
     "name": "Alitas",
     "subtitle": "Incluye papas",
-    "image": "categories/Imagenes_Menu_Virtual__gDqdHOz.png",
+    "image": "categories/Alas.png",
+    "banner_image": "categories/banners/6.png",
     "icon": "",
     "order": 2
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 4,
+  "fields": {
+    "name": "Bebidas",
+    "subtitle": "",
+    "image": "categories/Bebidas_fT92WD8.png",
+    "banner_image": "categories/banners/creslito_cocteles_RNEtU4L.png",
+    "icon": "",
+    "order": 4
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 6,
+  "fields": {
+    "name": "Para Picar",
+    "subtitle": "",
+    "image": "",
+    "banner_image": "",
+    "icon": "",
+    "order": 6
   }
 },
 {
@@ -28,6 +54,7 @@
     "name": "Mega Combos",
     "subtitle": "",
     "image": "",
+    "banner_image": "",
     "icon": "",
     "order": 3
   }
@@ -39,19 +66,9 @@
     "name": "Hamburguesas",
     "subtitle": "",
     "image": "categories/3_EpqAfeX.png",
+    "banner_image": "",
     "icon": "",
     "order": 3
-  }
-},
-{
-  "model": "menu.category",
-  "pk": 4,
-  "fields": {
-    "name": "Bebidas",
-    "subtitle": "",
-    "image": "",
-    "icon": "",
-    "order": 4
   }
 },
 {
@@ -60,20 +77,10 @@
   "fields": {
     "name": "Compartir",
     "subtitle": "",
-    "image": "",
+    "image": "categories/creslito_combos_varios.png",
+    "banner_image": "",
     "icon": "",
     "order": 5
-  }
-},
-{
-  "model": "menu.category",
-  "pk": 6,
-  "fields": {
-    "name": "Para Picar",
-    "subtitle": "",
-    "image": "",
-    "icon": "",
-    "order": 6
   }
 },
 {
@@ -83,6 +90,7 @@
     "name": "Combos al Instante",
     "subtitle": "",
     "image": "",
+    "banner_image": "",
     "icon": "",
     "order": 7
   }
@@ -92,11 +100,12 @@
   "pk": 1,
   "fields": {
     "category": 1,
-    "name": "Pizza Peque√±a",
+    "name": "Pizza PequeÒa",
     "description": "4 porciones",
     "price": "8.00",
     "image": "products/1.png",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -108,7 +117,8 @@
     "description": "8 Porciones",
     "price": "12.00",
     "image": "products/2.png",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -120,7 +130,8 @@
     "description": "12 porciones",
     "price": "15.00",
     "image": "products/fotos_menu_didigtal__2.png",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -132,7 +143,8 @@
     "description": "120 gr de carne de hamburgesa, queso mozzrella, salchicha, papas fritas, lechuga y tomate",
     "price": "4.00",
     "image": "products/Gemini_Generated_Image_.png",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -144,7 +156,8 @@
     "description": "Porcion de Pizza + Papas + bebida",
     "price": "4.00",
     "image": "products/image_1.png",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -152,11 +165,12 @@
   "pk": 9,
   "fields": {
     "category": 4,
-    "name": "Cola Peque√±a",
+    "name": "Cola Mediana",
     "description": "",
     "price": "0.75",
     "image": "products/glass-bottles-coca-cola-fanta-260nw-2185194187.webp",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -166,9 +180,10 @@
     "category": 4,
     "name": "Cola Grande",
     "description": "",
-    "price": "1.97",
+    "price": "1.96",
     "image": "products/images.jpg",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -180,7 +195,8 @@
     "description": "",
     "price": "3.00",
     "image": "products/Gemini_Generated_Image__1.png",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -188,11 +204,12 @@
   "pk": 14,
   "fields": {
     "category": 1,
-    "name": "Porci√≥n individual",
+    "name": "PorciÛn individual",
     "description": "",
     "price": "2.75",
     "image": "",
-    "tag": "individual"
+    "tag": "individual",
+    "group": ""
   }
 },
 {
@@ -204,7 +221,8 @@
     "description": "pizza + papas + 6 alitas + bebida + fresas con crema",
     "price": "22.50",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -216,7 +234,8 @@
     "description": "pizza + papas + bebida + fresas con crema + helado",
     "price": "22.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -228,7 +247,8 @@
     "description": "pizza + papas + 10 alitas + bebida + fresas con crema",
     "price": "27.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -240,7 +260,8 @@
     "description": "pizza + papas + 6 alitas + bebida + fresas con crema + helado",
     "price": "27.50",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -248,11 +269,12 @@
   "pk": 19,
   "fields": {
     "category": 8,
-    "name": "Cl√°sica",
-    "description": "125 gr. de carne, queso cheddar, doble jam√≥n, queso mozzarella, lechuga y tomate",
+    "name": "Cl·sica",
+    "description": "125 gr. de carne, queso cheddar, doble jamÛn, queso mozzarella, lechuga y tomate",
     "price": "4.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -261,10 +283,11 @@
   "fields": {
     "category": 8,
     "name": "Cresly Burguer",
-    "description": "125 gr. de carne, queso cheddar, jam√≥n, tocino, huevo, salami, queso mozzarella y tomate",
+    "description": "125 gr. de carne, queso cheddar, jamÛn, tocino, huevo, salami, queso mozzarella y tomate",
     "price": "6.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -273,10 +296,11 @@
   "fields": {
     "category": 8,
     "name": "Mega Burguer",
-    "description": "Doble carne de 125 gr., doble queso cheddar, doble jam√≥n, queso mozzarella",
+    "description": "Doble carne de 125 gr., doble queso cheddar, doble jamÛn, queso mozzarella",
     "price": "8.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -288,7 +312,8 @@
     "description": "",
     "price": "4.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -300,7 +325,8 @@
     "description": "",
     "price": "7.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -312,7 +338,8 @@
     "description": "",
     "price": "12.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -324,7 +351,8 @@
     "description": "",
     "price": "17.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -336,7 +364,8 @@
     "description": "",
     "price": "25.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -345,10 +374,11 @@
   "fields": {
     "category": 9,
     "name": "Combo Tu y Yo",
-    "description": "10 alitas + papas + 2 micheladas cl√°sicas",
+    "description": "10 alitas + papas + 2 micheladas cl·sicas",
     "price": "12.50",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -356,11 +386,12 @@
   "pk": 28,
   "fields": {
     "category": 9,
-    "name": "Combo Cumplea√±ero",
+    "name": "Combo CumpleaÒero",
     "description": "Pizza familiar 12 porciones + 10 alitas + papas + bebida y helado",
     "price": "28.50",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -369,10 +400,11 @@
   "fields": {
     "category": 9,
     "name": "Combo Cresly",
-    "description": "2 hamburguesas cl√°sicas + 10 alitas + papas y bebida",
+    "description": "2 hamburguesas cl·sicas + 10 alitas + papas y bebida",
     "price": "18.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -384,7 +416,8 @@
     "description": "10 alitas + 450 gr de papas y bebida de 1.5 L",
     "price": "16.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -393,10 +426,11 @@
   "fields": {
     "category": 10,
     "name": "Combo Personal",
-    "description": "Porci√≥n de Pizza + 4 Alitas + Papas + Bebida",
+    "description": "PorciÛn de Pizza + 4 Alitas + Papas + Bebida",
     "price": "7.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -408,7 +442,8 @@
     "description": "2 Porciones de Pizza + 4 Alitas + Papas + 2 Bebidas",
     "price": "11.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -416,11 +451,12 @@
   "pk": 33,
   "fields": {
     "category": 6,
-    "name": "Salchipapa Peque√±a",
+    "name": "Salchipapa PequeÒa",
     "description": "",
     "price": "2.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -432,7 +468,8 @@
     "description": "Presa de Pollo broster + Papas",
     "price": "3.50",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -444,7 +481,8 @@
     "description": "8 Nuggets + Papas",
     "price": "4.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -456,7 +494,8 @@
     "description": "Chorizo Argentino + Papas",
     "price": "3.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -465,10 +504,11 @@
   "fields": {
     "category": 10,
     "name": "Combo Wings y Burguer",
-    "description": "6 Alitas + 2 Hamburguesas Cl√°sicas + Papas + 2 Bebidas",
+    "description": "6 Alitas + 2 Hamburguesas Cl·sicas + Papas + 2 Bebidas",
     "price": "15.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -477,10 +517,11 @@
   "fields": {
     "category": 9,
     "name": "Combo MicheBurguer",
-    "description": "2 Micheladas + 2 Hamburguesas Cl√°sicas + Papas",
+    "description": "2 Micheladas + 2 Hamburguesas Cl·sicas + Papas",
     "price": "13.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -492,7 +533,8 @@
     "description": "Papas Fritas +  Queso Cheddar + Tocino",
     "price": "3.50",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
@@ -504,27 +546,125 @@
     "description": "Papas Fritas + Carne + Queso Cheddar + Tocino",
     "price": "5.00",
     "image": "",
-    "tag": ""
+    "tag": "",
+    "group": ""
   }
 },
 {
-  "model": "menu.flavor",
-  "pk": 9,
+  "model": "menu.product",
+  "pk": 41,
   "fields": {
-    "name": "3 Carnes",
-    "description": "Pasta de tomate, jam√≥n, salchicha, peperoni, queso mozzarella",
-    "flavor_type": "PIZZA",
-    "is_premium": false
+    "category": 4,
+    "name": "Limonada Rosa",
+    "description": "Limonada de Frutos Rojos Gasificada",
+    "price": "2.50",
+    "image": "",
+    "tag": "",
+    "group": ""
   }
 },
 {
-  "model": "menu.flavor",
-  "pk": 13,
+  "model": "menu.product",
+  "pk": 42,
   "fields": {
-    "name": "3 Quesos",
-    "description": "Queso fresco, queso parmesano, queso mozzarella, jam√≥n",
-    "flavor_type": "PIZZA",
-    "is_premium": false
+    "category": 4,
+    "name": "Limonada de Coco",
+    "description": "",
+    "price": "2.50",
+    "image": "",
+    "tag": "",
+    "group": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 43,
+  "fields": {
+    "category": 4,
+    "name": "Jugos Naturales",
+    "description": "",
+    "price": "1.75",
+    "image": "",
+    "tag": "",
+    "group": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 44,
+  "fields": {
+    "category": 4,
+    "name": "Agua Natural",
+    "description": "",
+    "price": "0.75",
+    "image": "",
+    "tag": "",
+    "group": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 45,
+  "fields": {
+    "category": 4,
+    "name": "Agua Mineral",
+    "description": "",
+    "price": "1.25",
+    "image": "",
+    "tag": "",
+    "group": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 46,
+  "fields": {
+    "category": 4,
+    "name": "Imperial de LimÛn",
+    "description": "",
+    "price": "1.25",
+    "image": "",
+    "tag": "",
+    "group": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 47,
+  "fields": {
+    "category": 4,
+    "name": "Mojito",
+    "description": "",
+    "price": "3.50",
+    "image": "",
+    "tag": "",
+    "group": "Cocteles y Licor"
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 48,
+  "fields": {
+    "category": 4,
+    "name": "Cuba Libre",
+    "description": "",
+    "price": "3.50",
+    "image": "",
+    "tag": "",
+    "group": "Cocteles y Licor"
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 49,
+  "fields": {
+    "category": 4,
+    "name": "Michelada",
+    "description": "",
+    "price": "3.50",
+    "image": "",
+    "tag": "",
+    "group": "Cocteles y Licor"
   }
 },
 {
@@ -532,56 +672,6 @@
   "pk": 4,
   "fields": {
     "name": "BBQ",
-    "description": "",
-    "flavor_type": "ALITAS",
-    "is_premium": false
-  }
-},
-{
-  "model": "menu.flavor",
-  "pk": 15,
-  "fields": {
-    "name": "Champi√±ones",
-    "description": "Pasta de tomate, jam√≥n, champi√±ones, or√©gano, queso mozzarella",
-    "flavor_type": "PIZZA",
-    "is_premium": false
-  }
-},
-{
-  "model": "menu.flavor",
-  "pk": 7,
-  "fields": {
-    "name": "Chorizo",
-    "description": "Pasta de tomate, chorizo argentino, jam√≥n especial, queso mozzarella, or√©gano",
-    "flavor_type": "PIZZA",
-    "is_premium": true
-  }
-},
-{
-  "model": "menu.flavor",
-  "pk": 10,
-  "fields": {
-    "name": "Hawaiana",
-    "description": "Pasta de tomate, jam√≥n, pi√±a, queso mozzarella",
-    "flavor_type": "PIZZA",
-    "is_premium": false
-  }
-},
-{
-  "model": "menu.flavor",
-  "pk": 11,
-  "fields": {
-    "name": "Jam√≥n y Queso",
-    "description": "Pasta de tomate, jam√≥n, or√©gano, queso mozzarella",
-    "flavor_type": "PIZZA",
-    "is_premium": false
-  }
-},
-{
-  "model": "menu.flavor",
-  "pk": 6,
-  "fields": {
-    "name": "Maracuy√°",
     "description": "",
     "flavor_type": "ALITAS",
     "is_premium": false
@@ -599,10 +689,80 @@
 },
 {
   "model": "menu.flavor",
-  "pk": 16,
+  "pk": 6,
   "fields": {
-    "name": "Peperoni",
-    "description": "Pasta de tomate, full peperoni, queso mozzarella, or√©gano",
+    "name": "Maracuy·",
+    "description": "",
+    "flavor_type": "ALITAS",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 7,
+  "fields": {
+    "name": "Chorizo",
+    "description": "Pasta de tomate, chorizo argentino, jamÛn especial, queso mozzarella, orÈgano",
+    "flavor_type": "PIZZA",
+    "is_premium": true
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 8,
+  "fields": {
+    "name": "Suprema",
+    "description": "Pasta de tomate, salchicha, jamÛn, peperoni, pimientos, queso mozzarella, champiÒones y orÈgano",
+    "flavor_type": "PIZZA",
+    "is_premium": true
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 9,
+  "fields": {
+    "name": "3 Carnes",
+    "description": "Pasta de tomate, jamÛn, salchicha, peperoni, queso mozzarella",
+    "flavor_type": "PIZZA",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 10,
+  "fields": {
+    "name": "Hawaiana",
+    "description": "Pasta de tomate, jamÛn, piÒa, queso mozzarella",
+    "flavor_type": "PIZZA",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 11,
+  "fields": {
+    "name": "JamÛn y Queso",
+    "description": "Pasta de tomate, jamÛn, orÈgano, queso mozzarella",
+    "flavor_type": "PIZZA",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 12,
+  "fields": {
+    "name": "Vegetariana",
+    "description": "Pasta de tomate, jamÛn, pimientos, zucchini, berengena, champiÒones, queso mozzarella",
+    "flavor_type": "PIZZA",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 13,
+  "fields": {
+    "name": "3 Quesos",
+    "description": "Queso fresco, queso parmesano, queso mozzarella, jamÛn",
     "flavor_type": "PIZZA",
     "is_premium": false
   }
@@ -612,7 +772,27 @@
   "pk": 14,
   "fields": {
     "name": "Pimientos y Peperoni",
-    "description": "Pasta de tomate, pimientos, peperoni, queso mozzarella, or√©gano",
+    "description": "Pasta de tomate, pimientos, peperoni, queso mozzarella, orÈgano",
+    "flavor_type": "PIZZA",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 15,
+  "fields": {
+    "name": "ChampiÒones",
+    "description": "Pasta de tomate, jamÛn, champiÒones, orÈgano, queso mozzarella",
+    "flavor_type": "PIZZA",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 16,
+  "fields": {
+    "name": "Peperoni",
+    "description": "Pasta de tomate, full peperoni, queso mozzarella, orÈgano",
     "flavor_type": "PIZZA",
     "is_premium": false
   }
@@ -621,29 +801,49 @@
   "model": "menu.flavor",
   "pk": 17,
   "fields": {
-    "name": "Salami y Jam√≥n",
-    "description": "Pasta de tomate, jam√≥n, salami, or√©gano, queso mozzarella",
+    "name": "Salami y JamÛn",
+    "description": "Pasta de tomate, jamÛn, salami, orÈgano, queso mozzarella",
     "flavor_type": "PIZZA",
     "is_premium": false
   }
 },
 {
   "model": "menu.flavor",
-  "pk": 8,
+  "pk": 18,
   "fields": {
-    "name": "Suprema",
-    "description": "Pasta de tomate, salchicha, jam√≥n, peperoni, pimientos, queso mozzarella, champi√±ones y or√©gano",
+    "name": "Ranchera",
+    "description": "Pasta de Tomate, Tocino, Salami, Chorizo, y Queso Mozzarella",
     "flavor_type": "PIZZA",
     "is_premium": true
   }
 },
 {
   "model": "menu.flavor",
-  "pk": 12,
+  "pk": 19,
   "fields": {
-    "name": "Vegetariana",
-    "description": "Pasta de tomate, jam√≥n, pimientos, zucchini, berengena, champi√±ones, queso mozzarella",
-    "flavor_type": "PIZZA",
+    "name": "Picantes",
+    "description": "",
+    "flavor_type": "ALITAS",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 20,
+  "fields": {
+    "name": "Broster",
+    "description": "",
+    "flavor_type": "ALITAS",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 21,
+  "fields": {
+    "name": "PiÒa",
+    "description": "",
+    "flavor_type": "ALITAS",
     "is_premium": false
   }
 },
@@ -654,7 +854,7 @@
     "title": "2x1",
     "image": "banners/2.png",
     "is_active": true,
-    "order": 0
+    "order": 1
   }
 },
 {
@@ -664,24 +864,17 @@
     "title": "FDS",
     "image": "banners/1.png",
     "is_active": true,
-    "order": 1
+    "order": 2
   }
 },
 {
-  "model": "auth.user",
+  "model": "menu.promobanner",
+  "pk": 3,
   "fields": {
-    "password": "pbkdf2_sha256$1200000$C3Iv9HqwlQXUA9mqjqyKLa$hc4C14xhiDLQaxDN96hzZvAadgbCAprxGCDNnGhTDzI=",
-    "last_login": "2026-06-11T05:45:00.476Z",
-    "is_superuser": true,
-    "username": "admin",
-    "first_name": "",
-    "last_name": "",
-    "email": "admin@example.com",
-    "is_staff": true,
+    "title": "Mundial",
+    "image": "banners/banner_1.png",
     "is_active": true,
-    "date_joined": "2026-04-18T20:17:17.924Z",
-    "groups": [],
-    "user_permissions": []
+    "order": 0
   }
 }
 ]
