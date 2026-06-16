@@ -1,0 +1,687 @@
+[
+{
+  "model": "menu.category",
+  "pk": 1,
+  "fields": {
+    "name": "Pizzas",
+    "subtitle": "Pide 2 mitades diferentes sin costo extra",
+    "image": "categories/4.png",
+    "icon": "",
+    "order": 1
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 2,
+  "fields": {
+    "name": "Alitas",
+    "subtitle": "Incluye papas",
+    "image": "categories/Imagenes_Menu_Virtual__gDqdHOz.png",
+    "icon": "",
+    "order": 2
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 7,
+  "fields": {
+    "name": "Mega Combos",
+    "subtitle": "",
+    "image": "",
+    "icon": "",
+    "order": 3
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 8,
+  "fields": {
+    "name": "Hamburguesas",
+    "subtitle": "",
+    "image": "categories/3_EpqAfeX.png",
+    "icon": "",
+    "order": 3
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 4,
+  "fields": {
+    "name": "Bebidas",
+    "subtitle": "",
+    "image": "",
+    "icon": "",
+    "order": 4
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 9,
+  "fields": {
+    "name": "Compartir",
+    "subtitle": "",
+    "image": "",
+    "icon": "",
+    "order": 5
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 6,
+  "fields": {
+    "name": "Para Picar",
+    "subtitle": "",
+    "image": "",
+    "icon": "",
+    "order": 6
+  }
+},
+{
+  "model": "menu.category",
+  "pk": 10,
+  "fields": {
+    "name": "Combos al Instante",
+    "subtitle": "",
+    "image": "",
+    "icon": "",
+    "order": 7
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "name": "Pizza Pequeña",
+    "description": "4 porciones",
+    "price": "8.00",
+    "image": "products/1.png",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 2,
+  "fields": {
+    "category": 1,
+    "name": "Pizza Mediana",
+    "description": "8 Porciones",
+    "price": "12.00",
+    "image": "products/2.png",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 3,
+  "fields": {
+    "category": 1,
+    "name": "Pizza Familiar",
+    "description": "12 porciones",
+    "price": "15.00",
+    "image": "products/fotos_menu_didigtal__2.png",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 7,
+  "fields": {
+    "category": 6,
+    "name": "Plato Cresly",
+    "description": "120 gr de carne de hamburgesa, queso mozzrella, salchicha, papas fritas, lechuga y tomate",
+    "price": "4.00",
+    "image": "products/Gemini_Generated_Image_.png",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 8,
+  "fields": {
+    "category": 10,
+    "name": "Combo completo",
+    "description": "Porcion de Pizza + Papas + bebida",
+    "price": "4.00",
+    "image": "products/image_1.png",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 9,
+  "fields": {
+    "category": 4,
+    "name": "Cola Pequeña",
+    "description": "",
+    "price": "0.75",
+    "image": "products/glass-bottles-coca-cola-fanta-260nw-2185194187.webp",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 10,
+  "fields": {
+    "category": 4,
+    "name": "Cola Grande",
+    "description": "",
+    "price": "1.97",
+    "image": "products/images.jpg",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 12,
+  "fields": {
+    "category": 6,
+    "name": "Salchipapa Grande",
+    "description": "",
+    "price": "3.00",
+    "image": "products/Gemini_Generated_Image__1.png",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 14,
+  "fields": {
+    "category": 1,
+    "name": "Porción individual",
+    "description": "",
+    "price": "2.75",
+    "image": "",
+    "tag": "individual"
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 15,
+  "fields": {
+    "category": 7,
+    "name": "Mega Combo 1",
+    "description": "pizza + papas + 6 alitas + bebida + fresas con crema",
+    "price": "22.50",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 16,
+  "fields": {
+    "category": 7,
+    "name": "Mega Combo 2",
+    "description": "pizza + papas + bebida + fresas con crema + helado",
+    "price": "22.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 17,
+  "fields": {
+    "category": 7,
+    "name": "Mega Combo 3",
+    "description": "pizza + papas + 10 alitas + bebida + fresas con crema",
+    "price": "27.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 18,
+  "fields": {
+    "category": 7,
+    "name": "Mega Combo 4",
+    "description": "pizza + papas + 6 alitas + bebida + fresas con crema + helado",
+    "price": "27.50",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 19,
+  "fields": {
+    "category": 8,
+    "name": "Clásica",
+    "description": "125 gr. de carne, queso cheddar, doble jamón, queso mozzarella, lechuga y tomate",
+    "price": "4.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 20,
+  "fields": {
+    "category": 8,
+    "name": "Cresly Burguer",
+    "description": "125 gr. de carne, queso cheddar, jamón, tocino, huevo, salami, queso mozzarella y tomate",
+    "price": "6.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 21,
+  "fields": {
+    "category": 8,
+    "name": "Mega Burguer",
+    "description": "Doble carne de 125 gr., doble queso cheddar, doble jamón, queso mozzarella",
+    "price": "8.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 22,
+  "fields": {
+    "category": 2,
+    "name": "4 alitas",
+    "description": "",
+    "price": "4.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 23,
+  "fields": {
+    "category": 2,
+    "name": "8 alitas",
+    "description": "",
+    "price": "7.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 24,
+  "fields": {
+    "category": 2,
+    "name": "14 alitas",
+    "description": "",
+    "price": "12.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 25,
+  "fields": {
+    "category": 2,
+    "name": "20 alitas",
+    "description": "",
+    "price": "17.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 26,
+  "fields": {
+    "category": 2,
+    "name": "30 alitas",
+    "description": "",
+    "price": "25.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 27,
+  "fields": {
+    "category": 9,
+    "name": "Combo Tu y Yo",
+    "description": "10 alitas + papas + 2 micheladas clásicas",
+    "price": "12.50",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 28,
+  "fields": {
+    "category": 9,
+    "name": "Combo Cumpleañero",
+    "description": "Pizza familiar 12 porciones + 10 alitas + papas + bebida y helado",
+    "price": "28.50",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 29,
+  "fields": {
+    "category": 9,
+    "name": "Combo Cresly",
+    "description": "2 hamburguesas clásicas + 10 alitas + papas y bebida",
+    "price": "18.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 30,
+  "fields": {
+    "category": 9,
+    "name": "Reto de Comelones",
+    "description": "10 alitas + 450 gr de papas y bebida de 1.5 L",
+    "price": "16.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 31,
+  "fields": {
+    "category": 10,
+    "name": "Combo Personal",
+    "description": "Porción de Pizza + 4 Alitas + Papas + Bebida",
+    "price": "7.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 32,
+  "fields": {
+    "category": 10,
+    "name": "Combo Duo",
+    "description": "2 Porciones de Pizza + 4 Alitas + Papas + 2 Bebidas",
+    "price": "11.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 33,
+  "fields": {
+    "category": 6,
+    "name": "Salchipapa Pequeña",
+    "description": "",
+    "price": "2.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 34,
+  "fields": {
+    "category": 6,
+    "name": "Papi pollo",
+    "description": "Presa de Pollo broster + Papas",
+    "price": "3.50",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 35,
+  "fields": {
+    "category": 6,
+    "name": "Nuggets",
+    "description": "8 Nuggets + Papas",
+    "price": "4.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 36,
+  "fields": {
+    "category": 6,
+    "name": "Choripapa",
+    "description": "Chorizo Argentino + Papas",
+    "price": "3.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 37,
+  "fields": {
+    "category": 10,
+    "name": "Combo Wings y Burguer",
+    "description": "6 Alitas + 2 Hamburguesas Clásicas + Papas + 2 Bebidas",
+    "price": "15.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 38,
+  "fields": {
+    "category": 9,
+    "name": "Combo MicheBurguer",
+    "description": "2 Micheladas + 2 Hamburguesas Clásicas + Papas",
+    "price": "13.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 39,
+  "fields": {
+    "category": 6,
+    "name": "Papas Chedar con Tocino",
+    "description": "Papas Fritas +  Queso Cheddar + Tocino",
+    "price": "3.50",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.product",
+  "pk": 40,
+  "fields": {
+    "category": 6,
+    "name": "Chilli Fries",
+    "description": "Papas Fritas + Carne + Queso Cheddar + Tocino",
+    "price": "5.00",
+    "image": "",
+    "tag": ""
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 9,
+  "fields": {
+    "name": "3 Carnes",
+    "description": "Pasta de tomate, jamón, salchicha, peperoni, queso mozzarella",
+    "flavor_type": "PIZZA",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 13,
+  "fields": {
+    "name": "3 Quesos",
+    "description": "Queso fresco, queso parmesano, queso mozzarella, jamón",
+    "flavor_type": "PIZZA",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 4,
+  "fields": {
+    "name": "BBQ",
+    "description": "",
+    "flavor_type": "ALITAS",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 15,
+  "fields": {
+    "name": "Champiñones",
+    "description": "Pasta de tomate, jamón, champiñones, orégano, queso mozzarella",
+    "flavor_type": "PIZZA",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 7,
+  "fields": {
+    "name": "Chorizo",
+    "description": "Pasta de tomate, chorizo argentino, jamón especial, queso mozzarella, orégano",
+    "flavor_type": "PIZZA",
+    "is_premium": true
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 10,
+  "fields": {
+    "name": "Hawaiana",
+    "description": "Pasta de tomate, jamón, piña, queso mozzarella",
+    "flavor_type": "PIZZA",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 11,
+  "fields": {
+    "name": "Jamón y Queso",
+    "description": "Pasta de tomate, jamón, orégano, queso mozzarella",
+    "flavor_type": "PIZZA",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 6,
+  "fields": {
+    "name": "Maracuyá",
+    "description": "",
+    "flavor_type": "ALITAS",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 5,
+  "fields": {
+    "name": "Miel y Mostaza",
+    "description": "",
+    "flavor_type": "ALITAS",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 16,
+  "fields": {
+    "name": "Peperoni",
+    "description": "Pasta de tomate, full peperoni, queso mozzarella, orégano",
+    "flavor_type": "PIZZA",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 14,
+  "fields": {
+    "name": "Pimientos y Peperoni",
+    "description": "Pasta de tomate, pimientos, peperoni, queso mozzarella, orégano",
+    "flavor_type": "PIZZA",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 17,
+  "fields": {
+    "name": "Salami y Jamón",
+    "description": "Pasta de tomate, jamón, salami, orégano, queso mozzarella",
+    "flavor_type": "PIZZA",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 8,
+  "fields": {
+    "name": "Suprema",
+    "description": "Pasta de tomate, salchicha, jamón, peperoni, pimientos, queso mozzarella, champiñones y orégano",
+    "flavor_type": "PIZZA",
+    "is_premium": true
+  }
+},
+{
+  "model": "menu.flavor",
+  "pk": 12,
+  "fields": {
+    "name": "Vegetariana",
+    "description": "Pasta de tomate, jamón, pimientos, zucchini, berengena, champiñones, queso mozzarella",
+    "flavor_type": "PIZZA",
+    "is_premium": false
+  }
+},
+{
+  "model": "menu.promobanner",
+  "pk": 1,
+  "fields": {
+    "title": "2x1",
+    "image": "banners/2.png",
+    "is_active": true,
+    "order": 0
+  }
+},
+{
+  "model": "menu.promobanner",
+  "pk": 2,
+  "fields": {
+    "title": "FDS",
+    "image": "banners/1.png",
+    "is_active": true,
+    "order": 1
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$C3Iv9HqwlQXUA9mqjqyKLa$hc4C14xhiDLQaxDN96hzZvAadgbCAprxGCDNnGhTDzI=",
+    "last_login": "2026-06-11T05:45:00.476Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@example.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-04-18T20:17:17.924Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

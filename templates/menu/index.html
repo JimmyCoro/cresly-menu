@@ -1,0 +1,216 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ── HEADER ── -->
+<header class="top-bar-custom">
+  <div class="top-logo-wrapper">
+    <img src="{% static 'images/logo.png' %}" alt="Cresly Pizzería Logo" class="top-logo">
+    <div class="header-brand-text">
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:0.5rem;">
+    <input type="text" id="searchInput" class="d-none" placeholder="Buscar platillo...">
+    <span class="material-symbols-outlined search-icon-top  " id="searchToggle" title="Buscar">search</span>
+  </div>
+</header>
+
+<!-- ── NAV TABS ── -->
+<nav class="sticky-tabs-container" id="mainNavbar">
+  <div class="sticky-tabs-scroll">
+    {% for category in categories %}
+    <a href="#category-{{ category.id }}" class="nav-pill-custom {% if forloop.first %}active{% endif %}">
+      {{ category.name }}
+    </a>
+    {% endfor %}
+  </div>
+</nav>
+
+<!-- ── PROMO BANNERS ── -->
+{% if promo_banners %}
+<div class="banner-carousel-container" style="margin-bottom:1rem;">
+  <div class="banner-scroll">
+    {% for banner in promo_banners %}
+    <div class="banner-card">
+      <img src="{{ banner.image.url }}" alt="{{ banner.title }}">
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<!-- ── CATEGORIES ── -->
+{% for category in categories %}
+<section id="category-{{ category.id }}" class="scroll-section">
+
+  <div class="category-card">
+
+    <!-- Fila 1: título izquierda · imagen derecha -->
+    <div class="category-top-row">
+      <div class="category-title-col">
+        <div class="section-title-wrap">
+          {% if forloop.counter|divisibleby:2 %}
+          <h2 class="section-name teal">{{ category.name }}</h2>
+          <h2 class="section-echo teal" aria-hidden="true">{{ category.name }}</h2>
+          {% else %}
+          <h2 class="section-name red">{{ category.name }}</h2>
+          <h2 class="section-echo red" aria-hidden="true">{{ category.name }}</h2>
+          {% endif %}
+        </div>
+      </div>
+      {% if category.image %}
+      <div class="category-side-image">
+        <img src="{{ category.image.url }}" alt="{{ category.name }}">
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- Fila 2: productos full-ancho -->
+    <div class="category-card-content">
+
+      {% if category.products.exists %}
+      {% with cat_color=forloop.counter|divisibleby:2|yesno:"teal,red" %}
+
+      {% if "alita" in category.name|lower %}
+
+      <!-- Layout especial Alitas: fila 1 = 3 prods full-width · fila 2 = [2 prods + banner] + [imagen] -->
+      <div class="alitas-grid">
+
+        <!-- Fila 1: primeros 3 productos (auto-placed, llenan col 1-2-3) -->
+        {% for product in category.products.all|slice:":3" %}
+        <div class="product-card">
+          <span class="price-badge" style="font-size:0.85rem;">${{ product.price }}</span>
+          <h4 class="product-card-name">{{ product.name }}</h4>
+          {% if product.description %}<p class="product-card-desc">{{ product.description }}</p>{% endif %}
+        </div>
+        {% endfor %}
+
+        <!-- Fila 2, cols 1-2: productos 4-5 + banner (posición explícita) -->
+        <div class="alitas-grid-left">
+          {% for product in category.products.all|slice:"3:" %}
+          <div class="product-card">
+            <span class="price-badge" style="font-size:0.85rem;">${{ product.price }}</span>
+            <h4 class="product-card-name">{{ product.name }}</h4>
+            {% if product.description %}<p class="product-card-desc">{{ product.description }}</p>{% endif %}
+          </div>
+          {% endfor %}
+          <div class="category-banner-teal alitas-bottom-banner">
+            <div class="category-banner-teal-icon">
+              <span class="material-symbols-outlined">fastfood</span>
+            </div>
+            <span>Incluye Papas</span>
+          </div>
+        </div>
+
+        <!-- Fila 2, col 3: imagen (posición explícita) -->
+        {% if category.banner_image %}
+        <div class="alitas-grid-image">
+          <img src="{{ category.banner_image.url }}" alt="">
+        </div>
+        {% endif %}
+
+      </div>
+
+      {% else %}
+
+      <!-- Grid agrupado por subgrupo -->
+      {% regroup category.products.all|dictsort:"group" by group as product_groups %}
+      {% for grp in product_groups %}
+
+      {% if grp.grouper %}
+      <hr class="subcategory-divider">
+      <div class="subcategory-title-wrap">
+        <h3 class="subcategory-name {{ cat_color }}">{{ grp.grouper }}</h3>
+      </div>
+      {% endif %}
+
+      <div class="products-grid">
+        {% for product in grp.list %}
+        {% if product.tag != "individual" %}
+        <div class="product-card {% if forloop.counter == 2 %}featured{% endif %}">
+          <span class="price-badge" style="font-size:0.85rem;">${{ product.price }}</span>
+          <h4 class="product-card-name">{{ product.name }}</h4>
+          {% if product.description %}
+          {% if "pizza" in category.name|lower %}
+          <p class="product-card-desc-black">{{ product.description }}</p>
+          {% else %}
+          <p class="product-card-desc">{{ product.description }}</p>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% if not grp.grouper and category.banner_image and "pizza" not in category.name|lower %}
+        <div style="grid-column:3;grid-row:2/span 2;border-radius:1rem;overflow:hidden;">
+          <img src="{{ category.banner_image.url }}" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        {% endif %}
+      </div>
+
+      {% endfor %}
+
+      <!-- Layout especial Pizzas: izquierda=porción+banner · derecha=foto -->
+      {% if "pizza" in category.name|lower %}
+      <div class="pizza-bottom-layout" style="margin-top:0.75rem;">
+        <div class="pizza-bottom-left">
+          {% for product in category.products.all %}
+          {% if product.tag == "individual" %}
+          <div class="product-individual-row">
+            <span>{{ product.name }}</span>
+            <span class="price-badge" style="font-size:0.85rem;">${{ product.price }}</span>
+          </div>
+          {% endif %}
+          {% endfor %}
+          <div class="category-banner-teal">
+            <span>Pide 2 mitades sin costo extra</span>
+          </div>
+        </div>
+        {% if category.banner_image %}
+        <div class="banner-side-image">
+          <img src="{{ category.banner_image.url }}" alt="">
+        </div>
+        {% endif %}
+      </div>
+      {% else %}
+
+      <!-- Row "Porción individual" — otras categorías -->
+      {% for product in category.products.all %}
+      {% if product.tag == "individual" %}
+      <div class="product-individual-row" style="margin-top:0.75rem;">
+        <span>{{ product.name }}</span>
+        <span class="price-badge" style="font-size:0.85rem;">${{ product.price }}</span>
+      </div>
+      {% endif %}
+      {% endfor %}
+
+      <!-- Banner "Agranda tu Combo" — solo hamburguesas -->
+      {% if "hamburgues" in category.name|lower %}
+      <div class="agranda-banner" style="margin-top:0.75rem;">
+        <div class="agranda-banner-left">
+          <div class="agranda-icon">
+            <span class="material-symbols-outlined">fastfood</span>
+          </div>
+          <div>
+            <p class="agranda-title">Agranda tu Combo</p>
+            <p class="agranda-sub">Papas mas Bebida</p>
+          </div>
+        </div>
+        <span class="price-badge" style="font-size:1.1rem;flex-shrink:0;">$1.99</span>
+      </div>
+      {% endif %}
+
+      {% endif %}
+
+      {% endif %}
+
+      {% endwith %}
+      {% endif %}
+
+    </div><!-- /category-card-content -->
+  </div><!-- /category-card -->
+
+</section>
+{% endfor %}
+
+{% endblock %}
