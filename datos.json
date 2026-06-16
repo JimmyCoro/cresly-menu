@@ -100,7 +100,7 @@
   "pk": 1,
   "fields": {
     "category": 1,
-    "name": "Pizza PequeÒa",
+    "name": "Pizza Peque√±a",
     "description": "4 porciones",
     "price": "8.00",
     "image": "products/1.png",
@@ -204,7 +204,7 @@
   "pk": 14,
   "fields": {
     "category": 1,
-    "name": "PorciÛn individual",
+    "name": "Porci√≥n individual",
     "description": "",
     "price": "2.75",
     "image": "",
@@ -269,8 +269,8 @@
   "pk": 19,
   "fields": {
     "category": 8,
-    "name": "Cl·sica",
-    "description": "125 gr. de carne, queso cheddar, doble jamÛn, queso mozzarella, lechuga y tomate",
+    "name": "Cl√°sica",
+    "description": "125 gr. de carne, queso cheddar, doble jam√≥n, queso mozzarella, lechuga y tomate",
     "price": "4.00",
     "image": "",
     "tag": "",
@@ -283,7 +283,7 @@
   "fields": {
     "category": 8,
     "name": "Cresly Burguer",
-    "description": "125 gr. de carne, queso cheddar, jamÛn, tocino, huevo, salami, queso mozzarella y tomate",
+    "description": "125 gr. de carne, queso cheddar, jam√≥n, tocino, huevo, salami, queso mozzarella y tomate",
     "price": "6.00",
     "image": "",
     "tag": "",
@@ -296,7 +296,7 @@
   "fields": {
     "category": 8,
     "name": "Mega Burguer",
-    "description": "Doble carne de 125 gr., doble queso cheddar, doble jamÛn, queso mozzarella",
+    "description": "Doble carne de 125 gr., doble queso cheddar, doble jam√≥n, queso mozzarella",
     "price": "8.00",
     "image": "",
     "tag": "",
@@ -374,7 +374,7 @@
   "fields": {
     "category": 9,
     "name": "Combo Tu y Yo",
-    "description": "10 alitas + papas + 2 micheladas cl·sicas",
+    "description": "10 alitas + papas + 2 micheladas cl√°sicas",
     "price": "12.50",
     "image": "",
     "tag": "",
@@ -386,7 +386,7 @@
   "pk": 28,
   "fields": {
     "category": 9,
-    "name": "Combo CumpleaÒero",
+    "name": "Combo Cumplea√±ero",
     "description": "Pizza familiar 12 porciones + 10 alitas + papas + bebida y helado",
     "price": "28.50",
     "image": "",
@@ -400,7 +400,7 @@
   "fields": {
     "category": 9,
     "name": "Combo Cresly",
-    "description": "2 hamburguesas cl·sicas + 10 alitas + papas y bebida",
+    "description": "2 hamburguesas cl√°sicas + 10 alitas + papas y bebida",
     "price": "18.00",
     "image": "",
     "tag": "",
@@ -426,7 +426,7 @@
   "fields": {
     "category": 10,
     "name": "Combo Personal",
-    "description": "PorciÛn de Pizza + 4 Alitas + Papas + Bebida",
+    "description": "Porci√≥n de Pizza + 4 Alitas + Papas + Bebida",
     "price": "7.00",
     "image": "",
     "tag": "",
@@ -451,7 +451,7 @@
   "pk": 33,
   "fields": {
     "category": 6,
-    "name": "Salchipapa PequeÒa",
+    "name": "Salchipapa Peque√±a",
     "description": "",
     "price": "2.00",
     "image": "",
@@ -504,7 +504,7 @@
   "fields": {
     "category": 10,
     "name": "Combo Wings y Burguer",
-    "description": "6 Alitas + 2 Hamburguesas Cl·sicas + Papas + 2 Bebidas",
+    "description": "6 Alitas + 2 Hamburguesas Cl√°sicas + Papas + 2 Bebidas",
     "price": "15.00",
     "image": "",
     "tag": "",
@@ -517,7 +517,7 @@
   "fields": {
     "category": 9,
     "name": "Combo MicheBurguer",
-    "description": "2 Micheladas + 2 Hamburguesas Cl·sicas + Papas",
+    "description": "2 Micheladas + 2 Hamburguesas Cl√°sicas + Papas",
     "price": "13.00",
     "image": "",
     "tag": "",
@@ -620,7 +620,7 @@
   "pk": 46,
   "fields": {
     "category": 4,
-    "name": "Imperial de LimÛn",
+    "name": "Imperial de Lim√≥n",
     "description": "",
     "price": "1.25",
     "image": "",
@@ -691,7 +691,7 @@
   "model": "menu.flavor",
   "pk": 6,
   "fields": {
-    "name": "Maracuy·",
+    "name": "Maracuy√°",
     "description": "",
     "flavor_type": "ALITAS",
     "is_premium": false
@@ -702,7 +702,7 @@
   "pk": 7,
   "fields": {
     "name": "Chorizo",
-    "description": "Pasta de tomate, chorizo argentino, jamÛn especial, queso mozzarella, orÈgano",
+    "description": "Pasta de tomate, chorizo argentino, jam√≥n especial, queso mozzarella, or√©gano",
     "flavor_type": "PIZZA",
     "is_premium": true
   }
@@ -712,7 +712,7 @@
   "pk": 8,
   "fields": {
     "name": "Suprema",
-    "description": "Pasta de tomate, salchicha, jamÛn, peperoni, pimientos, queso mozzarella, champiÒones y orÈgano",
+    "description": "Pasta de tomate, salchicha, jam√≥n, peperoni, pimientos, queso mozzarella, champi√±ones y or√©gano",
     "flavor_type": "PIZZA",
     "is_premium": true
   }
@@ -722,7 +722,7 @@
   "pk": 9,
   "fields": {
     "name": "3 Carnes",
-    "description": "Pasta de tomate, jamÛn, salchicha, peperoni, queso mozzarella",
+    "description": "Pasta de tomate, jam√≥n, salchicha, peperoni, queso mozzarella",
     "flavor_type": "PIZZA",
     "is_premium": false
   }
@@ -732,7 +732,7 @@
   "pk": 10,
   "fields": {
     "name": "Hawaiana",
-    "description": "Pasta de tomate, jamÛn, piÒa, queso mozzarella",
+    "description": "Pasta de tomate, jam√≥n, pi√±a, queso mozzarella",
     "flavor_type": "PIZZA",
     "is_premium": false
   }
@@ -741,8 +741,8 @@
   "model": "menu.flavor",
   "pk": 11,
   "fields": {
-    "name": "JamÛn y Queso",
-    "description": "Pasta de tomate, jamÛn, orÈgano, queso mozzarella",
+    "name": "Jam√≥n y Queso",
+    "description": "Pasta de tomate, jam√≥n, or√©gano, queso mozzarella",
     "flavor_type": "PIZZA",
     "is_premium": false
   }
@@ -752,7 +752,7 @@
   "pk": 12,
   "fields": {
     "name": "Vegetariana",
-    "description": "Pasta de tomate, jamÛn, pimientos, zucchini, berengena, champiÒones, queso mozzarella",
+    "description": "Pasta de tomate, jam√≥n, pimientos, zucchini, berengena, champi√±ones, queso mozzarella",
     "flavor_type": "PIZZA",
     "is_premium": false
   }
@@ -762,7 +762,7 @@
   "pk": 13,
   "fields": {
     "name": "3 Quesos",
-    "description": "Queso fresco, queso parmesano, queso mozzarella, jamÛn",
+    "description": "Queso fresco, queso parmesano, queso mozzarella, jam√≥n",
     "flavor_type": "PIZZA",
     "is_premium": false
   }
@@ -772,7 +772,7 @@
   "pk": 14,
   "fields": {
     "name": "Pimientos y Peperoni",
-    "description": "Pasta de tomate, pimientos, peperoni, queso mozzarella, orÈgano",
+    "description": "Pasta de tomate, pimientos, peperoni, queso mozzarella, or√©gano",
     "flavor_type": "PIZZA",
     "is_premium": false
   }
@@ -781,8 +781,8 @@
   "model": "menu.flavor",
   "pk": 15,
   "fields": {
-    "name": "ChampiÒones",
-    "description": "Pasta de tomate, jamÛn, champiÒones, orÈgano, queso mozzarella",
+    "name": "Champi√±ones",
+    "description": "Pasta de tomate, jam√≥n, champi√±ones, or√©gano, queso mozzarella",
     "flavor_type": "PIZZA",
     "is_premium": false
   }
@@ -792,7 +792,7 @@
   "pk": 16,
   "fields": {
     "name": "Peperoni",
-    "description": "Pasta de tomate, full peperoni, queso mozzarella, orÈgano",
+    "description": "Pasta de tomate, full peperoni, queso mozzarella, or√©gano",
     "flavor_type": "PIZZA",
     "is_premium": false
   }
@@ -801,8 +801,8 @@
   "model": "menu.flavor",
   "pk": 17,
   "fields": {
-    "name": "Salami y JamÛn",
-    "description": "Pasta de tomate, jamÛn, salami, orÈgano, queso mozzarella",
+    "name": "Salami y Jam√≥n",
+    "description": "Pasta de tomate, jam√≥n, salami, or√©gano, queso mozzarella",
     "flavor_type": "PIZZA",
     "is_premium": false
   }
@@ -841,7 +841,7 @@
   "model": "menu.flavor",
   "pk": 21,
   "fields": {
-    "name": "PiÒa",
+    "name": "Pi√±a",
     "description": "",
     "flavor_type": "ALITAS",
     "is_premium": false
