@@ -6,5 +6,8 @@ class Command(BaseCommand):
     help = 'Carga o sincroniza datos iniciales desde datos.json'
 
     def handle(self, *args, **options):
-        call_command('loaddata', 'datos.json')
-        self.stdout.write(self.style.SUCCESS('Datos sincronizados correctamente.'))
+        try:
+            call_command('loaddata', 'datos.json')
+            self.stdout.write(self.style.SUCCESS('Datos sincronizados correctamente.'))
+        except Exception as e:
+            self.stdout.write(self.style.WARNING(f'Advertencia al sincronizar datos: {e}'))
